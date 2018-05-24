@@ -8,7 +8,7 @@ import random
 #############
 
 def plot_signaux(fig, x, y, signals, color_dic, nb_sample_per_activity, 
-                 linestyle_per_activity, linewidth_per_activity, shuffle=False):
+                 linestyle_per_activity, linewidth_per_activity, shuffle=False, figdim1 = 1, figdim2 = 1, legend=False):
     index = []
     for k,v in itertools.groupby(sorted(enumerate(y), key=lambda x : x[1]), key=lambda x : x[1]):
         lv = np.array(list(v))
@@ -23,7 +23,7 @@ def plot_signaux(fig, x, y, signals, color_dic, nb_sample_per_activity,
         random.shuffle(data_plot)
     for isignal, signal in enumerate(signals):
         labels=[]
-        ax = fig.add_subplot(3,2,isignal+1)
+        ax = fig.add_subplot(figdim1, figdim2 ,isignal+1)
         for values,label in data_plot:  
             color = color_dic[label]
             lw = linewidth_per_activity[label]
@@ -33,8 +33,25 @@ def plot_signaux(fig, x, y, signals, color_dic, nb_sample_per_activity,
             else:
                 ax.plot(x_range,values[:,isignal], color=color, linewidth=lw, linestyle=ls, label = label)
                 labels.append(label)
-        plt.legend(fontsize=15,ncol=2)
+        if legend :
+            plt.legend(fontsize=15,ncol=2)
         ax.set_title(signal, fontsize=25)
+    plt.tight_layout()
+    
+    
+def plot_signal_per_activity(fig, X, Y, nb_sample, isignal, signals, color_dic):
+    index_per_act = {}
+    for k,v in itertools.groupby(sorted(enumerate(Y), key=lambda x : x[1]), key=lambda x : x[1]):
+        lv = np.array(list(v))
+        index_per_act.update({k : lv[:nb_sample,0].astype(int)})
+    
+    x_range = range(128)
+    for i,(act, index) in enumerate(index_per_act.items()):
+        ax = fig.add_subplot(3,2,i+1)
+        for x in X[index,:,isignal]:
+            ax.plot(x_range, x,color=color_dic[act], linewidth=1)
+        ax.set_title(act)
+    plt.suptitle(signals[isignal])
     plt.tight_layout()
 
 
@@ -42,7 +59,7 @@ def plot_signaux(fig, x, y, signals, color_dic, nb_sample_per_activity,
 ## ACP ##
 #########
 
-def plot_variance_acp(fig, acp, X_acp): 
+def plot_variance_acp(fig, acp, X_acp, whis=1.5): 
     ax = fig.add_subplot(1,2,1)
     ax.bar(range(10), acp.explained_variance_ratio_[:10]*100, align='center',
         color='grey', ecolor='black')
@@ -52,7 +69,7 @@ def plot_variance_acp(fig, acp, X_acp):
     ax.set_title("Pourcentage de variance expliquee \n des premieres composantes", fontsize=20)
 
     ax = fig.add_subplot(1,2,2)
-    box=ax.boxplot(X_acp[:,0:10])
+    box=ax.boxplot(X_acp[:,0:10], whis=whis)
     ax.set_title("Distribution des premieres composantes", fontsize=20)
 
 def plot_pca(ax, X, acp, nbc, nbc2, colors, markersizes):
