@@ -178,3 +178,84 @@ def plot_detection_result(fig, ax, CT, color_dic, s1=70, s2=150, normal_behaviou
         xtick.set_color(color)
     ax.set_xlim(*x_lim)
     ax.set_ylim(y_lim)
+
+    
+###############
+## Ondelette ##
+###############
+
+
+def coef_pyramid_plot(ax, coefs, first=0, scale='uniform'):
+    n_levels = len(coefs)
+    n = 2**(n_levels - 1) # assumes periodic
+
+    if scale == 'uniform':
+        biggest = [np.max(np.abs(np.hstack(coefs)))] * n_levels
+    else:
+        # multiply by 2 so the highest bars only take up .5
+        biggest = [np.max(np.abs(i))*2 for i in coefs]
+
+    for i in range(first,n_levels):
+        x = np.linspace(2**(n_levels - 2 - i), n - 2**(n_levels - 2 - i), 2**i)
+        ymin = n_levels - i - 1 + first
+        yheight = coefs[i]/biggest[i]
+        ymax = yheight + ymin
+        ax.vlines(x, ymin, ymax, linewidth=1.1)
+
+    ax.set_xlim(0,n)
+    ax.set_ylim(first - 1, n_levels)
+    ax.yaxis.set_ticks(np.arange(n_levels-1,first-1,-1))
+    ax.yaxis.set_ticklabels(np.arange(first,n_levels))
+    ax.tick_params(top=False, right=False, direction='out', pad=6)
+    ax.set_ylabel("Levels", fontsize=14)
+    ax.grid(True, alpha=.85, color='white', axis='y', linestyle='-')
+    ax.set_title('Wavelet Detail Coefficients', fontsize=16,
+            position=(.5,1.05))
+    
+    
+def plot_boxplot_coef_per_signal(X, Y, N_plot_max, labels, activity_dic, color_dic, N_per_activity_train ):
+    N_dim = X.shape[1]
+    N_dim_plot = min(N_dim, N_plot_max)
+    height = 4*N_dim_plot
+    fig = plt.figure(figsize=(12,height))
+    for i_dim in range(N_dim_plot):
+        ax=fig.add_subplot(N_dim_plot,1,i_dim+1)
+        X_i = X[:,i_dim]
+        for i_act in range(1,7):
+            label = activity_dic[i_act]
+            color = color_dic[label]
+            N_act = N_per_activity_train[i_act]
+            X_i_act = X_i[Y==i_act]
+            bplot = ax.boxplot(X_i_act, patch_artist=True, positions=[i_act])
+            bplot["boxes"][0].set_facecolor(color)
+            bplot["medians"][0].set_color("black")
+            bplot["medians"][0].set_linewidth(2)
+        ax.set_xlim(0.5,6.5)
+        ax.set_xticks(range(1,7))
+        xticks_label = labels if i_dim==N_dim_plot-1 else ['']*6
+        ax.set_xticklabels(xticks_label, rotation=45, fontsize=12)
+        
+        
+        
+def plot_boxplot_coef_concat_per_signal(X, Y, labels, activity_dic, color_dic, N_per_activity_train):
+    N_level = len(X)
+    height = 4*N_level
+    fig = plt.figure(figsize=(12,height))
+    for i_level in range(N_level):
+        ax=fig.add_subplot(N_level,1,i_level+1)
+        X_level = X[i_level]
+        N_dim = X_level.shape[1]
+        for i_act in range(1,7):
+            label = activity_dic[i_act]
+            color = color_dic[label]
+            N_act = N_per_activity_train[i_act]
+            X_i_act = X_level[Y==i_act].reshape((N_act*N_dim,1))
+            bplot = ax.boxplot(X_i_act, patch_artist=True, positions=[i_act])
+            bplot["boxes"][0].set_facecolor(color)
+            bplot["medians"][0].set_color("black")
+            bplot["medians"][0].set_linewidth(2)
+        ax.set_xlim(0.5,6.5)
+        ax.set_xticks(range(1,7))
+        xticks_label = labels if i_level==N_level-1 else ['']*6
+        ax.set_xticklabels(xticks_label, rotation=45, fontsize=12)
+        ax.set_title("Level : %d" %i_level)

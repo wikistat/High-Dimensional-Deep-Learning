@@ -1,9 +1,11 @@
 .DS_Store
 ModLinHD.ipynb
 plop.py
+.ipynb_checkpoints/
 HumanActivityRecognition/utils/__init__.pyc
 HumanActivityRecognition/utils/illustration.pyc
 HumanActivityRecognition/utils/load.pyc
 HumanActivityRecognition/.ipynb_checkpoints/
 DonneesSimulees/.ipynb_checkpoints/
 HumanActivityRecognition/utils/__pycache__/
+HAR_Guillo_Martin_5GMM.ipynb
