@@ -15,16 +15,18 @@ class NeuralNet():
         z_h = np.dot(X, self.W_h) + self.b_h
         h = sigmoid(z_h)
         z_o = np.dot(h, self.W_o) + self.b_o
-        y = softmax(z_o)
-        rep = [y, h, z_h] if keep_activation else y
+        fx = softmax(z_o)
+        rep = [fx, h, z_h] if keep_activation else fx
         return rep
     
     def loss(self, X, y):
-        return NegLogLike(one_hot(self.output_size, y), self.forward(X))
-
+        fx = self.forward(X)
+        ohy = one_hot(self.output_size, y)
+        nll = NegLogLike(ohy, fx)
+        return nll 
     def grad_loss(self, X, y_true):
-        y, h, z_h = self.forward(X, keep_activation=True)
-        grad_z_o = y - one_hot(self.output_size, y_true)
+        fx, h, z_h = self.forward(X, keep_activation=True)
+        grad_z_o = fx - one_hot(self.output_size, y_true)
 
         grad_W_o = np.outer(h, grad_z_o)
         grad_b_o = grad_z_o
@@ -45,11 +47,13 @@ class NeuralNet():
         self.b_o = self.b_o - learning_rate * grads["b_o"]
 
     def predict(self, X):
+        fx = self.forward(X)
         if len(X.shape) == 1:
-            return np.argmax(self.forward(X))
+            
+            yp = np.argmax(fx)
         else:
-            return np.argmax(self.forward(X), axis=1)
-
+            yp = np.argmax(fx, axis=1)
+        return yp
     def accuracy(self, X, y):
         y_preds = np.argmax(self.forward(X), axis=1)
         return np.mean(y_preds == y)
