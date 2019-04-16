@@ -10,10 +10,12 @@ The main theme of the course is learning methods, especially deep neural network
 
  
 
-* Neural networks and introduction to deep learning: definition of neural networks, activation functions, multilayer perceptron, backpropagation algorithms, optimization algorithms, regularization
+* Neural networks and introduction to deep learning: definition of neural networks, activation functions, multilayer perceptron, backpropagation algorithms, optimization algorithms, regularization  
+**Application** : [Implementation of a mlp with one layer with `Numpy`](https://github.com/wikistat/High-Dimensional-Deep-Learning/tree/master/BackPropagation)
 
 
-* Convolutional neural networks: convolutional layer, pooling, dropout, convolutional network architectures (ResNet, Inception), transfer learning and fine tuning, applications for image or signal classification.
+* Convolutional neural networks: convolutional layer, pooling, dropout, convolutional network architectures (ResNet, Inception), transfer learning and fine tuning, applications for image or signal classification.  
+**Application** : [Image classification on *MNIST* and *CatsVsDogs* data with `Tensorflow`](https://github.com/wikistat/High-Dimensional-Deep-Learning/tree/master/BackPropagation)
 
 
 * Encoder-decoder, Variational auto-encoder, Generative adversarial networks
