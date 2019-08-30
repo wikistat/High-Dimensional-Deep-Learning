@@ -1,0 +1,20 @@
+x_train_conv = np.expand_dims(x_train, axis=-1)
+x_test_conv = np.expand_dims(x_test, axis=-1)
+
+
+conv_encoder = km.Sequential(name="ConvEncoderModel")
+conv_encoder.add(kl.Conv2D(16, (3,3) , activation='relu', input_shape=(28,28,1) , padding='same' ))
+conv_encoder.add(kl.MaxPooling2D((2, 2), padding='same'))
+conv_encoder.add(kl.Conv2D(8, (3, 3), activation='relu', padding='same'))
+conv_encoder.add(kl.MaxPooling2D((2, 2), padding='same'))
+conv_encoder.add(kl.Conv2D(8, (3, 3), activation='relu', padding='same'))
+conv_encoder.add(kl. MaxPooling2D((2, 2), padding='same'))
+
+conv_decoder = km.Sequential(name="ConvDecoderModel")
+conv_decoder.add(kl.Conv2D(8, (3, 3), activation='relu', input_shape = conv_encoder.get_output_shape_at(-1)[-3:], padding='same'))
+conv_decoder.add(kl.UpSampling2D((2, 2)))
+conv_decoder.add(kl.Conv2D(8, (3, 3), activation='relu', padding='same'))
+conv_decoder.add(kl.UpSampling2D((2, 2)))
+conv_decoder.add(kl.Conv2D(16, (3, 3), activation='relu'))
+conv_decoder.add(kl.UpSampling2D((2, 2)))
+conv_decoder.add(kl.Conv2D(1, (3, 3), activation='sigmoid', padding='same'))
