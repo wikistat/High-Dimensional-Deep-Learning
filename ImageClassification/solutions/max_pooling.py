@@ -1,5 +1,4 @@
-from keras.layers import MaxPool2D
-conv_mp = Sequential([ MaxPool2D(pool_size=(2,2))])
+conv_mp = km.Sequential([ kl.MaxPool2D(pool_size=(2,2))])
 
 img_in = np.expand_dims(x, 0)
 img_out = conv_mp.predict(img_in)
