@@ -66,11 +66,11 @@ def plot_variance_acp(fig, acp, X_acp, whis=1.5):
     ax.set_xticks(range(10))
     ax.set_ylabel("Variance")
     ax.set_title("", fontsize=35)
-    ax.set_title("Pourcentage de variance expliquee \n des premieres composantes", fontsize=20)
+    ax.set_title("Percentage of explained variance \n on first components", fontsize=20)
 
     ax = fig.add_subplot(1,2,2)
     box=ax.boxplot(X_acp[:,0:10], whis=whis)
-    ax.set_title("Distribution des premieres composantes", fontsize=20)
+    ax.set_title("First components distributions", fontsize=20)
 
 def plot_pca(ax, X, acp, nbc, nbc2, colors, markersizes):
     ax.scatter(X[:,nbc-1],X[:,nbc2-1],marker=".", color= colors, s=markersizes)
@@ -87,7 +87,7 @@ def plot_projection_acp(fig, X_acp, acp, colors=None, markersizes=None, color_di
         markersizes = [1]*N
     
     plot_pca(ax, X_acp, acp, 1, 2, colors, markersizes)
-    ax.set_title("Projection des invididus sur les \n  deux premieres composantes", fontsize=20)
+    ax.set_title("Projections on \n  first two components", fontsize=20)
     ax.set_xlim(X_acp[:,0].min()-5,X_acp[:,0].max()+5)
     ax.set_ylim(X_acp[:,1].min()-1,X_acp[:,1].max()+1)
     
@@ -102,7 +102,7 @@ def plot_projection_acp(fig, X_acp, acp, colors=None, markersizes=None, color_di
         ax.text(x1,x2,str(f), horizontalalignment="center", verticalalignment="center", color="red")
     ax.set_xlim(acp.components_[0].min()-0.002,acp.components_[0].max()+0.002)
     ax.set_ylim(acp.components_[1].min()-0.01,acp.components_[1].max()+0.01)
-    ax.set_title("Projection des features sur les \n  deux premieres composantes", fontsize=20)
+    ax.set_title("Projections on \n  first two components", fontsize=20)
     
     
 #####################
