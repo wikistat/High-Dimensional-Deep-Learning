@@ -1,6 +1,9 @@
 .DS_Store
 ModLinHD.ipynb
 plop.py
+FunctionalDecomposition/utils/__pycache__/*
+AnomalyDetection/utils/__pycache__/*
+*__pychache__*
 .ipynb_checkpoints/
 AutoEncoder/github_cholet.py
 HumanActivityRecognition/utils/__init__.pyc
