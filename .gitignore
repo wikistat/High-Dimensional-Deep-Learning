@@ -12,6 +12,9 @@ HumanActivityRecognition/utils/load.pyc
 HumanActivityRecognition/.ipynb_checkpoints/
 DonneesSimulees/.ipynb_checkpoints/
 HumanActivityRecognition/utils/__pycache__/
+ImageClassification/cats_transformation.png
+ImageClassification/data/subsample_200_Ntrain_80_Nval/preprocessing_example/
+ImageClassification/data/subsample_200_Ntrain_80_Nval/weights_model_VGG_fully_connected_model_10_epochs_20_batch_size.h5
 HAR_Guillo_Martin_5GMM.ipynb
 ECG Heratbeat Classification/Note.md
 ECG Heratbeat Classification/ecg.py
