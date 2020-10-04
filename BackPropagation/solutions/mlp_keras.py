@@ -5,4 +5,4 @@ keras_model.add(Dense(n_classes, activation='softmax'))
 keras_model.compile(optimizer=SGD(lr=3),
                     loss='categorical_crossentropy', metrics=['accuracy'])
 
-keras_model.fit(X_train, to_categorical(y_train), epochs=15, batch_size=32, validation_data = (X_test, to_categorical(y_test)))
+history = keras_model.fit(X_train, to_categorical(y_train), epochs=15, batch_size=32, validation_data = (X_test, to_categorical(y_test)))
