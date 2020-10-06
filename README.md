@@ -86,6 +86,11 @@ Also, the code proposed on those examples are not necessarily the official code 
 * Generative model
     * Pixel Cnn/++ [paper](https://arxiv.org/abs/1606.05328), [code](https://github.com/openai/pixel-cnn)
     * Gan variation [paper](https://arxiv.org/abs/1701.07875), [code](https://github.com/martinarjovsky/WassersteinGAN)
+    
+* Anomaly detection 
+   * Deep robust One -Class classification [paper](https://arxiv.org/pdf/2002.12718.pdf), [code](https://github.com/microsoft/EdgeML)
+    
+    
 
 
 
