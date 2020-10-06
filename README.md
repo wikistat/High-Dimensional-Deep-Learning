@@ -26,24 +26,6 @@ The main theme of the course is learning methods, especially deep neural network
 
 * Anomaly detection for functional data: One Class SVM, Random Forest, Isolation Forest, Local Outlier Factor. Applications to  anomaly detection in functional data.
 
- 
-
-## Organisation : 
-
-* Lectures : 15 H .
-
-* Practical works : 25 H applications on real data sets with the softwares R and Python's libraries Scikit Learn and Keras -Tensorflow. 
-
-
-
----------------------------
-
- 
-
-**Evaluation** : written exam (50 %) and project (50 %) . 
-
-
-
 -------------
 
 **Objectives** :
@@ -62,8 +44,49 @@ At the end of this module, the student will have understood and be able to expla
 
 The student will be able to:
 
-* Fit  a deep neural network for signal or image classification 
+* Fit a deep neural network for signal or image classification 
 * Implement deep learning methods in high dimension on real data sets with the software Python  or R’s libraries.
+
+
+ 
+
+## Organisation : 
+
+* Lectures : 15 H .
+
+* Practical works : 25 H applications on real data sets with the softwares R and Python's libraries Scikit Learn and Keras -Tensorflow. 
+
+## Evaluation
+
+* written exam (50 %) - 09/12/2020
+
+* project (oral presentation 25% - 22/01/2021 + notebook (25%) <br>The main of this project is to apply the knowledge you acquired during this course by:
+
+    * Selecting a deep learning algorithm you haven't seen in this course.
+    * Explaining how this algorithm works (oral presentation).
+    * Apply these algorithm on a dataset and explain their performances (notebook and oral presentation).
+
+You can choose a deep learning algorithm among the following list. <br>
+This list is not exhaustive and you can suggest other algorithms (that's actually a good idea). <br>
+Also, the code proposed on those examples are not necessarily the official code nor the one propose by the authors. <br>
+
+
+**Example of algorithms**
+* Detection & segmentation
+    * Yolo [paper](https://arxiv.org/abs/1804.02767), [code](https://github.com/pjreddie/darknet)
+    * U-net [paper](https://arxiv.org/abs/1505.04597), [code](https://www.tensorflow.org/tutorials/images/segmentation)
+    * Mask Rcnn, Fast Rcnn, Faster Rcnn [paper](https://arxiv.org/pdf/1506.01497.pdf), [code](https://github.com/rbgirshick/py-faster-rcnn)
+* One shot learning
+    * Siamese Network [paper](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf), [code](https://github.com/tensorfreitas/Siamese-Networks-for-One-Shot-Learning)
+* Outlier detection
+    * Deep roc
+* Style Transfer 
+    * A Neural Algorithm of Artistic Style [paper](https://arxiv.org/abs/1508.06576), [code](https://www.tensorflow.org/tutorials/generative/style_transfer)
+    * Cycle gan [paper](https://arxiv.org/pdf/1703.10593.pdf), [code](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+* Generative model
+    * Pixel Cnn/++ [paper](https://arxiv.org/abs/1606.05328), [code](https://github.com/openai/pixel-cnn)
+    * Gan variation [paper](https://arxiv.org/abs/1701.07875), [code](https://github.com/martinarjovsky/WassersteinGAN)
+
 
 
 
