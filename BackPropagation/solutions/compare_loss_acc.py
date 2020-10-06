@@ -1,4 +1,3 @@
-history = keras_model.history.history
 fig = plt.figure(figsize=(20,5))
 ax = fig.add_subplot(1,2,1)
 ax.plot(history.history["loss"], label="keras", color="red")
