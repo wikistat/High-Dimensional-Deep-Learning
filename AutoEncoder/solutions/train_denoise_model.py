@@ -1,7 +1,3 @@
-x_train_conv = np.expand_dims(x_train, axis=-1)
-x_test_conv = np.expand_dims(x_test, axis=-1)
-
-
 conv_encoder = km.Sequential(name="ConvEncoderModel")
 conv_encoder.add(kl.Conv2D(16, (3,3) , activation='relu', input_shape=(28,28,1) , padding='same' ))
 conv_encoder.add(kl.MaxPooling2D((2, 2), padding='same'))
@@ -18,3 +14,10 @@ conv_decoder.add(kl.UpSampling2D((2, 2)))
 conv_decoder.add(kl.Conv2D(16, (3, 3), activation='relu'))
 conv_decoder.add(kl.UpSampling2D((2, 2)))
 conv_decoder.add(kl.Conv2D(1, (3, 3), activation='sigmoid', padding='same'))
+
+conv_autoencoder = km.Sequential(name="ConvAutoencoderModel")
+conv_autoencoder.add(conv_encoder)
+conv_autoencoder.add(conv_decoder)
+
+conv_autoencoder.compile(optimizer='adam', loss='binary_crossentropy')
+conv_autoencoder.fit(x_train_noisy, x_train_conv, epochs=10, batch_size=256, validation_data=(x_test_noisy, x_test_conv))
