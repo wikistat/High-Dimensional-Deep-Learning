@@ -70,7 +70,7 @@ Also, the code proposed on those examples are not necessarily the official code 
 * Anomaly detection 
    * Deep robust One -Class classification [paper](https://arxiv.org/pdf/2002.12718.pdf), [code](https://github.com/microsoft/EdgeML)
  
- * Fairness : 
+ * Fairness
     * Achieving Equalized Odds by Resampling Sensitive Attributes [paper](https://arxiv.org/abs/2006.04292), [code](https://github.com/yromano/fair_dummies)
     
     
