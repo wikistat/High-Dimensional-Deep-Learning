@@ -58,8 +58,6 @@ Also, the code proposed on those examples are not necessarily the official code 
     * Mask Rcnn, Fast Rcnn, Faster Rcnn [paper](https://arxiv.org/pdf/1506.01497.pdf), [code](https://github.com/rbgirshick/py-faster-rcnn)
 * One shot learning
     * Siamese Network [paper](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf), [code](https://github.com/tensorfreitas/Siamese-Networks-for-One-Shot-Learning)
-* Outlier detection
-    * Deep roc
 * Style Transfer 
     * A Neural Algorithm of Artistic Style [paper](https://arxiv.org/abs/1508.06576), [code](https://www.tensorflow.org/tutorials/generative/style_transfer)
     * Cycle gan [paper](https://arxiv.org/pdf/1703.10593.pdf), [code](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
