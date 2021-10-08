@@ -4,8 +4,6 @@
 
 ## Presentation :
 
- 
-
 The main theme of the course is learning methods, especially deep neural networks, for  processing  high dimensional  data, such as signals or images. We will cover the following topics:
 
  
@@ -52,48 +50,50 @@ Also, the code proposed on those examples are not necessarily the official code 
 
 
 **Example of algorithms**
+ 
 * Detection & segmentation
     * Yolo [paper](https://arxiv.org/abs/1804.02767), [code](https://github.com/pjreddie/darknet)
     * U-net [paper](https://arxiv.org/abs/1505.04597), [code](https://www.tensorflow.org/tutorials/images/segmentation)
-    * Mask Rcnn, Fast Rcnn, Faster Rcnn [paper](https://arxiv.org/pdf/1506.01497.pdf), [code](https://github.com/rbgirshick/py-faster-rcnn)
-
     * Focal Loss for Dense Object Detection [paper](https://arxiv.org/abs/1708.02002), [code](https://github.com/fizyr/keras-retinanet)
 
 * One shot learning
     * Siamese Network [paper](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf), [code](https://github.com/tensorfreitas/Siamese-Networks-for-One-Shot-Learning)
+ 
 * Style Transfer 
     * A Neural Algorithm of Artistic Style [paper](https://arxiv.org/abs/1508.06576), [code](https://www.tensorflow.org/tutorials/generative/style_transfer)
     * Cycle gan [paper](https://arxiv.org/pdf/1703.10593.pdf), [code](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+ 
 * Generative model
     * Pixel Cnn/++ [paper](https://arxiv.org/abs/1606.05328), [code](https://github.com/openai/pixel-cnn)
     * Gan variation [paper](https://arxiv.org/abs/1701.07875), [code](https://github.com/martinarjovsky/WassersteinGAN)
+    * NetGAN without GAN: From Random Walks to Low-Rank Approximations [paper](https://www.tml.cs.uni-tuebingen.de/team/luxburg/publications/RensburgLuxburg_Netgan_without_Gan2020.pdf), [code](https://github.com/hheidrich/CELL)
     
 * Anomaly detection 
    * Deep robust One -Class classification [paper](https://arxiv.org/pdf/2002.12718.pdf), [code](https://github.com/microsoft/EdgeML)
  
- * Fairness
+* Fairness
     * Achieving Equalized Odds by Resampling Sensitive Attributes [paper](https://arxiv.org/abs/2006.04292), [code](https://github.com/yromano/fair_dummies)
     
 * Unsupervised learning:
     * Unsupervised Visual Representation Learning by Context Prediction [paper](https://arxiv.org/abs/1505.05192), [code](https://github.com/cdoersch/deepcontext)
-
     * Unsupervised Representation Learning by Predicting Image Rotations [paper](https://openreview.net/forum?id=S1v4N2l0-), [code](https://github.com/gidariss/FeatureLearningRotNet)
-
     * Self-supervised Label Augmentation via Input Transformations [paper](https://arxiv.org/abs/1910.05872), [code](https://github.com/hankook/SLA)
-    
     * A Simple Framework for Contrastive Learning of Visual Representations [paper](https://arxiv.org/abs/2002.05709), [code](https://github.com/sthalles/SimCLR)
-
     * Exploring Simple Siamese Representation Learning [paper](https://arxiv.org/abs/2011.10566)
 , [code](https://github.com/facebookresearch/simsiam)
 
 * Domain adaptation/generalisation:
     * Domain Generalization by Solving Jigsaw Puzzles [paper](https://arxiv.org/pdf/1903.06864.pdf), [code](https://github.com/fmcarlucci/JigenDG)
-
     * Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks [paper](https://arxiv.org/pdf/1703.10593.pdf), [code](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
 
 * Regularization:
     * mixup: Beyond Empirical Risk Minimization [paper](https://arxiv.org/abs/1710.09412), [code](https://github.com/facebookresearch/mixup-cifar10)
 
+* Time series
+    * GP-VAE: Deep Probabilistic Time Series Imputation [paper](https://arxiv.org/abs/1907.04155), [code](https://github.com/ratschlab/GP-VAE)
+ 
+ * Interpretability
+    * SHAP: A Unified Approach to Interpreting Model Predictions [paper](https://arxiv.org/pdf/1705.07874.pdf), [code](https://github.com/slundberg/shap)
 
 * Others:
     * Distilling the Knowledge in a Neural Network [paper](https://arxiv.org/abs/1503.02531), [code](https://github.com/peterliht/knowledge-distillation-pytorch)
