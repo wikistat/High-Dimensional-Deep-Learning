@@ -52,7 +52,6 @@ Also, the code proposed on those examples are not necessarily the official code 
 **Example of algorithms**
  
 * Detection & segmentation
-    * Yolo [paper](https://arxiv.org/abs/1804.02767), [code](https://github.com/pjreddie/darknet)
     * U-net [paper](https://arxiv.org/abs/1505.04597), [code](https://www.tensorflow.org/tutorials/images/segmentation)
     * Focal Loss for Dense Object Detection [paper](https://arxiv.org/abs/1708.02002), [code](https://github.com/fizyr/keras-retinanet)
 
