@@ -36,9 +36,9 @@ The main theme of the course is learning methods, especially deep neural network
 
 ## Evaluation
 
-* written exam (50 %) - 14/01/2022
+* written exam (50 %) - 
 
-* project (oral presentation 25% - 18/01/2022 + notebook (25%) <br>The main of this project is to apply the knowledge you acquired during this course by:
+* project (oral presentation 25%  + notebook (25%) <br>The main of this project is to apply the knowledge you acquired during this course by:
 
     * Selecting a deep learning algorithm you haven't seen in this course.
     * Explaining how this algorithm works (oral presentation).
