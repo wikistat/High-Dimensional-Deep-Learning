@@ -66,7 +66,10 @@ Also, the code proposed on those examples are not necessarily the official code 
     * Pixel Cnn/++ [paper](https://arxiv.org/abs/1606.05328), [code](https://github.com/openai/pixel-cnn)
     * Gan variation [paper](https://arxiv.org/abs/1701.07875), [code](https://github.com/martinarjovsky/WassersteinGAN)
     * NetGAN without GAN: From Random Walks to Low-Rank Approximations [paper](https://www.tml.cs.uni-tuebingen.de/team/luxburg/publications/RensburgLuxburg_Netgan_without_Gan2020.pdf), [code](https://github.com/hheidrich/CELL)
-    
+  
+* Contrastive learning 
+   * Supervized contrastive learning [paper](https://arxiv.org/pdf/2004.11362v5.pdf), [code](https://github.com/HobbitLong/SupContrast) in Pytorch 
+   
 * Anomaly detection 
    * Deep robust One -Class classification [paper](https://arxiv.org/pdf/2002.12718.pdf), [code](https://github.com/microsoft/EdgeML)
  
@@ -74,7 +77,6 @@ Also, the code proposed on those examples are not necessarily the official code 
     * Achieving Equalized Odds by Resampling Sensitive Attributes [paper](https://arxiv.org/abs/2006.04292), [code](https://github.com/yromano/fair_dummies)
     
 * Unsupervised learning:
-    * Unsupervised Visual Representation Learning by Context Prediction [paper](https://arxiv.org/abs/1505.05192), [code](https://github.com/cdoersch/deepcontext)
     * Unsupervised Representation Learning by Predicting Image Rotations [paper](https://openreview.net/forum?id=S1v4N2l0-), [code](https://github.com/gidariss/FeatureLearningRotNet)
     * Self-supervised Label Augmentation via Input Transformations [paper](https://arxiv.org/abs/1910.05872), [code](https://github.com/hankook/SLA)
     * A Simple Framework for Contrastive Learning of Visual Representations [paper](https://arxiv.org/abs/2002.05709), [code](https://github.com/sthalles/SimCLR)
