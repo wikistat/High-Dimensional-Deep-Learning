@@ -50,7 +50,9 @@ This list is not exhaustive and you can suggest other algorithms (that's actuall
 Also, the code proposed on those examples are not necessarily the official code nor the one propose by the authors. <br>
 
 
-### Please register in the following [document](https://docs.google.com/spreadsheets/d/1K7Ge9kK-OIWIE4cOiNEiq8IuWykJiGTmOaBNa8KJWG0/edit?usp=sharing)
+### _Please register in the following [document](https://docs.google.com/spreadsheets/d/1K7Ge9kK-OIWIE4cOiNEiq8IuWykJiGTmOaBNa8KJWG0/edit?usp=sharing)_
+
+<br>
 
 
 **Example of algorithms**
