@@ -34,6 +34,7 @@ The main theme of the course is learning methods, especially deep neural network
 
 * Practical works : 28 H applications on real data sets with the softwares R and Python's libraries Scikit Learn and Keras -Tensorflow. 
 
+
 ## Evaluation
 
 * written exam (50 %) - 
@@ -49,11 +50,16 @@ This list is not exhaustive and you can suggest other algorithms (that's actuall
 Also, the code proposed on those examples are not necessarily the official code nor the one propose by the authors. <br>
 
 
+### Please register in the following [document](https://docs.google.com/spreadsheets/d/1K7Ge9kK-OIWIE4cOiNEiq8IuWykJiGTmOaBNa8KJWG0/edit?usp=sharing)
+
+
 **Example of algorithms**
  
 * Detection & segmentation
     * U-net [paper](https://arxiv.org/abs/1505.04597), [code](https://www.tensorflow.org/tutorials/images/segmentation)
     * Focal Loss for Dense Object Detection [paper](https://arxiv.org/abs/1708.02002), [code](https://github.com/fizyr/keras-retinanet)
+    * Mask R-CNN [paper](https://arxiv.org/abs/1703.06870), [code](https://github.com/matterport/Mask_RCNN)
+    * EfficientDet: Scalable and Efficient Object Detection [paper](https://arxiv.org/pdf/1911.09070.pdf), [code](https://github.com/google/automl/tree/master/efficientdet)
 
 * One shot learning
     * Siamese Network [paper](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf), [code](https://github.com/tensorfreitas/Siamese-Networks-for-One-Shot-Learning)
@@ -64,21 +70,21 @@ Also, the code proposed on those examples are not necessarily the official code 
  
 * Generative model
     * Pixel Cnn/++ [paper](https://arxiv.org/abs/1606.05328), [code](https://github.com/openai/pixel-cnn)
+    * Importance Weighted Autoencoders [paper](https://arxiv.org/abs/1509.00519), [code](https://github.com/yburda/iwae)
     * Gan variation [paper](https://arxiv.org/abs/1701.07875), [code](https://github.com/martinarjovsky/WassersteinGAN)
     * NetGAN without GAN: From Random Walks to Low-Rank Approximations [paper](https://www.tml.cs.uni-tuebingen.de/team/luxburg/publications/RensburgLuxburg_Netgan_without_Gan2020.pdf), [code](https://github.com/hheidrich/CELL)
     * Denoising Diffusion Probabilistic Model [paper](https://arxiv.org/abs/2006.11239), [code](https://github.com/lucidrains/denoising-diffusion-pytorch)
   
 * Unsupervised learning:
-   * Supervized contrastive learning [paper](https://arxiv.org/pdf/2004.11362v5.pdf), [code](https://github.com/HobbitLong/SupContrast)
-   * Bootstrap your own latent: A new approach to self-supervised Learning [paper](https://arxiv.org/abs/2006.07733), [code](https://github.com/lucidrains/byol-pytorch)
-   * A Simple Framework for Contrastive Learning of Visual Representations [paper](https://arxiv.org/abs/2002.05709), [code](https://github.com/google-research/simclr)
-   * Barlow Twins: Self-Supervised Learning via Redundancy Reduction [paper](https://arxiv.org/abs/2002.05709), [code](https://github.com/facebookresearch/barlowtwins)
-   * Exploring Simple Siamese Representation Learning [paper](https://arxiv.org/abs/2011.10566)
-, [code](https://github.com/facebookresearch/simsiam)
-* Unsupervised Representation Learning by Predicting Image Rotations [paper](https://openreview.net/forum?id=S1v4N2l0-), [code](https://github.com/gidariss/FeatureLearningRotNet)
+    * Supervized contrastive learning [paper](https://arxiv.org/pdf/2004.11362v5.pdf), [code](https://github.com/HobbitLong/SupContrast)
+    * Bootstrap your own latent: A new approach to self-supervised Learning [paper](https://arxiv.org/abs/2006.07733), [code](https://github.com/lucidrains/byol-pytorch)
+    * A Simple Framework for Contrastive Learning of Visual Representations [paper](https://arxiv.org/abs/2002.05709), [code](https://github.com/google-research/simclr)
+    * Barlow Twins: Self-Supervised Learning via Redundancy Reduction [paper](https://arxiv.org/abs/2103.03230), [code](https://github.com/facebookresearch/barlowtwins)
+    * Exploring Simple Siamese Representation Learning [paper](https://arxiv.org/abs/2011.10566), [code](https://github.com/facebookresearch/simsiam)
+    * Unsupervised Representation Learning by Predicting Image Rotations [paper](https://openreview.net/forum?id=S1v4N2l0-), [code](https://github.com/gidariss/FeatureLearningRotNet)
     * Self-supervised Label Augmentation via Input Transformations [paper](https://arxiv.org/abs/1910.05872), [code](https://github.com/hankook/SLA)
     * A Simple Framework for Contrastive Learning of Visual Representations [paper](https://arxiv.org/abs/2002.05709), [code](https://github.com/sthalles/SimCLR)   
- 
+
 * Fairness
     * Achieving Equalized Odds by Resampling Sensitive Attributes [paper](https://arxiv.org/abs/2103.03230), [code](https://github.com/yromano/fair_dummies)    
 
@@ -95,9 +101,10 @@ Also, the code proposed on those examples are not necessarily the official code 
 
 * Time series
     * GP-VAE: Deep Probabilistic Time Series Imputation [paper](https://arxiv.org/abs/1907.04155), [code](https://github.com/ratschlab/GP-VAE)
+    * N-BEATS: Neural basis expansion analysis for interpretable time series forecasting [paper](https://arxiv.org/abs/1905.10437), [code](https://github.com/philipperemy/n-beats)
  
- * Interpretability
-    * SHAP: A Unified Approach to Interpreting Model Predictions [paper](https://arxiv.org/pdf/1705.07874.pdf), [code](https://github.com/slundberg/shap)
+<!-- * Interpretability
+    * SHAP: A Unified Approach to Interpreting Model Predictions [paper](https://arxiv.org/pdf/1705.07874.pdf), [code](https://github.com/slundberg/shap) -->
 
 * Others:
     <!-- * Distilling the Knowledge in a Neural Network [paper](https://arxiv.org/abs/1503.02531), [code](https://github.com/peterliht/knowledge-distillation-pytorch) -->
