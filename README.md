@@ -12,8 +12,8 @@ The main theme of the course is learning methods, especially deep neural network
 
 
 * Convolutional neural networks: convolutional layer, pooling, dropout, convolutional network architectures (ResNet, Inception), transfer learning and fine tuning, applications for image or signal classification.  
-**Application** : [Image classification on *MNIST* and *CatsVsDogs* data with `Tensorflow`](https://github.com/wikistat/High-Dimensional-Deep-Learning/tree/master/ImageClassification)
-**Application** : [Objects localization and detection through CNNs](https://github.com/wikistat/High-Dimensional-Deep-Learning/tree/master/VisionCNN)
+**Application 1** : [Image classification on *MNIST* and *CatsVsDogs* data with `Tensorflow`](https://github.com/wikistat/High-Dimensional-Deep-Learning/tree/master/ImageClassification) <br/>
+**Application 2** : [Objects localization and detection through CNNs](https://github.com/wikistat/High-Dimensional-Deep-Learning/tree/master/VisionCNN)
 
 * Encoder-decoder, Variational auto-encoder, Generative adversarial networks
 
@@ -52,7 +52,7 @@ Also, the code proposed on those examples are not necessarily the official code 
 
 ### _Please register in the following [document](https://docs.google.com/spreadsheets/d/1K7Ge9kK-OIWIE4cOiNEiq8IuWykJiGTmOaBNa8KJWG0/edit?usp=sharing)_
 
-<br>
+<br/>
 
 
 **Example of algorithms**
