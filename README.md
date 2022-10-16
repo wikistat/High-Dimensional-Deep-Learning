@@ -13,7 +13,7 @@ The main theme of the course is learning methods, especially deep neural network
 
 * Convolutional neural networks: convolutional layer, pooling, dropout, convolutional network architectures (ResNet, Inception), transfer learning and fine tuning, applications for image or signal classification.  
 **Application** : [Image classification on *MNIST* and *CatsVsDogs* data with `Tensorflow`](https://github.com/wikistat/High-Dimensional-Deep-Learning/tree/master/ImageClassification)
-
+**Application** : [Objects localization and detection through CNNs](https://github.com/wikistat/High-Dimensional-Deep-Learning/tree/master/VisionCNN)
 
 * Encoder-decoder, Variational auto-encoder, Generative adversarial networks
 
