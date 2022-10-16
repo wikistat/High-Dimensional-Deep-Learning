@@ -11,7 +11,7 @@ The main theme of the course is learning methods, especially deep neural network
 **Application** : [Implementation of a mlp with one layer with `Numpy`](https://github.com/wikistat/High-Dimensional-Deep-Learning/tree/master/BackPropagation)
 
 
-* Convolutional neural networks: convolutional layer, pooling, dropout, convolutional network architectures (ResNet, Inception), transfer learning and fine tuning, applications for image or signal classification.  
+* Convolutional neural networks: convolutional layer, pooling, dropout, convolutional network architectures (ResNet, Inception), transfer learning and fine tuning, applications for image or signal classification, applications for objects localization and detection.
 **Application 1** : [Image classification on *MNIST* and *CatsVsDogs* data with `Tensorflow`](https://github.com/wikistat/High-Dimensional-Deep-Learning/tree/master/ImageClassification) <br/>
 **Application 2** : [Objects localization and detection through CNNs](https://github.com/wikistat/High-Dimensional-Deep-Learning/tree/master/VisionCNN)
 
@@ -22,8 +22,6 @@ The main theme of the course is learning methods, especially deep neural network
 * Anomaly detection for functional data: One Class SVM, Random Forest, Isolation Forest, Local Outlier Factor. Applications to  anomaly detection in functional data.
  
 * Deep learning for time series forecasting
- 
-* Object detection / image segmentation
 
 ------------
  
