@@ -57,8 +57,7 @@ Also, the code proposed on those examples are not necessarily the official code 
 **Example of algorithms**
  
 * Detection & segmentation
-    * U-net [paper](https://arxiv.org/abs/1505.04597), [code](https://www.tensorflow.org/tutorials/images/segmentation)
-    * Focal Loss for Dense Object Detection [paper](https://arxiv.org/abs/1708.02002), [code](https://github.com/fizyr/keras-retinanet)
+   * Focal Loss for Dense Object Detection [paper](https://arxiv.org/abs/1708.02002), [code](https://github.com/fizyr/keras-retinanet)
     * Mask R-CNN [paper](https://arxiv.org/abs/1703.06870), [code](https://github.com/matterport/Mask_RCNN)
     * EfficientDet: Scalable and Efficient Object Detection [paper](https://arxiv.org/pdf/1911.09070.pdf), [code](https://github.com/google/automl/tree/master/efficientdet)
 
