@@ -29,24 +29,24 @@ The main theme of the course is learning methods, especially deep neural network
 
 ## Organisation : 
 
-* Lectures : 15 H .
+* Lectures : 9 H .
 
-* Practical works : 28 H applications on real data sets with the softwares R and Python's libraries Scikit Learn and Keras -Tensorflow. 
+* Practical works : 28 H applications on real data sets with Python's libraries Scikit Learn and Keras -Tensorflow. 
 
 
 ## Evaluation
 
 * written exam (50 %) - 
 
-* project (oral presentation 25%  + notebook (25%) <br>The main of this project is to apply the knowledge you acquired during this course by:
+* project (oral presentation 25%  + notebook (25%) <br>The main objective of this project is to apply the knowledge you acquired during this course by:
 
     * Selecting a deep learning algorithm you haven't seen in this course.
-    * Explaining how this algorithm works (oral presentation).
-    * Apply these algorithm on a dataset and explain their performances (notebook and oral presentation).
+    * Explaining how this algorithm works both in a notebook and an oral presentation. The notebook must explain in details how the method principles and the experimental procedure 
+    * Apply this algorithm on a different dataset and discuss on the obtained results (notebook and oral presentation).
 
 You can choose a deep learning algorithm among the following list. <br>
 This list is not exhaustive and you can suggest other algorithms (that's actually a good idea). <br>
-Also, the code proposed on those examples are not necessarily the official code nor the one propose by the authors. <br>
+Also, the code proposed on those examples are not necessarily the official code nor the one proposed by the authors. <br>
 
 
 ### _Please register in the following [document](https://docs.google.com/spreadsheets/d/1K7Ge9kK-OIWIE4cOiNEiq8IuWykJiGTmOaBNa8KJWG0/edit?usp=sharing)_
