@@ -1,0 +1,17 @@
+name: hddl
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - pandas==1.4.2
+    - numpy==1.24.0
+    - statsmodels
+    - scipy==1.8.1
+    - PyWavelets
+    - scikit-learn==1.1.2
+    - seaborn==0.11.2
+    - tensorflow==2.13.0
+
+

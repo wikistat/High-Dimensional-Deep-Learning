@@ -25,8 +25,26 @@ The main theme of the course is learning methods, especially deep neural network
 **Application** : [Sentiment analysis through Recurrent Neural Networks](https://github.com/wikistat/High-Dimensional-Deep-Learning/tree/master/RNN)
 
 ------------
- 
+ ## Installing required packages
 
+The file `environment.yml` contains a list of all the packages you need to run the notebooks in this repository. To install them, run the following command in your terminal:
+
+```bash
+conda env create -f environment.yml
+```
+
+Then, activate the environment:
+
+```bash
+conda activate hddl
+```
+
+or 
+
+```bash
+source activate hddl
+```
+------------
 ## Organisation : 
 
 * Lectures : 9 H .
